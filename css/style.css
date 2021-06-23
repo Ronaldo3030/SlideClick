@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url(https://www.10wallpaper.com/wallpaper/1366x768/1311/river_lake_dawn_beautifully-Landscape_HD_Wallpaper_1366x768.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/***************** TITLE *****************/
+.content h1{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: #fff;
+    cursor: default;
+    text-transform: uppercase;
+
+}
+
+/* ################################### */
+/***************** HOME *****************/
+/* ################################### */
+
+.content .start{
+    width: 60%;
+    height: 60%
+}
+
+/***************** BUTTONS *****************/
+.btn{
+    width: 100%;
+    height: 7rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    background-color: rgb(253, 99, 233);
+    color: #fff;
+    border-radius: 3rem;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content .btn:hover{
+    transition: all ease-in 100ms;
+    transform: scale(1.01);
+    filter: brightness(1.2);
+}
+
+.btn-back{
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.btn-back > img{
+    width: 4rem;
+    height: 4rem;
+}
+
+/* ################################### */
+/************** CONTAINER **************/
+/* ################################### */
+
+.container{
+    background-color: rgb(253, 99, 233);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+
+    transition: all ease-in-out 1000ms;
+}
+
+/***************** IMAGES *****************/
+.content .container .slide .imagens img{
+    display: flex;
+    width: 40rem;
+    height: 25rem;
+}
+
+.content .container .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/***************** ARROW *****************/
+.content .container .slide .seta{
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.1;
+    color: #fff;
+}
+
+.content .container .slide .seta:hover{
+    transition: all ease-in 300ms;
+    background-color: rgba(0, 0, 0, 0.37);
+    opacity: 1;
+}
+
+.content .container .slide .dir{
+    border-radius: 0 1rem 1rem 0;
+}
+.content .container .slide .esq{
+    border-radius: 1rem 0 0 1rem;
+
+}
+
+/* ################################### */
+/*************** EFFECTS ***************/
+/* ################################### */
+.off{
+    display: none;
+}
+.on{
+    display: block;
+}
+
+.blur{
+    background-color: rgba(20, 19, 19, 0.548);
+    transition: all ease-in-out 100ms;
+}
